@@ -1,0 +1,657 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  height: 100%;
+}
+
+body, html {
+  min-height: 100%;
+}
+
+//--header
+
+.ba-header {
+  background: #9f9acf url("../img/Rectangle 9.png") 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.ba-header__container {
+  &--menu {
+    margin: 0 auto;
+    padding: 45px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1200px;
+    .ba-logo {
+      background: url("../img/logo@2x.svg") 50% no-repeat;
+      background-size: cover;
+      float: left;
+      /* Style for "Bouncy" */
+      /* Style for "Logo" */
+      width: 54px;
+      height: 72px;
+    }
+  }
+}
+
+//---nav menu
+nav .ba-menu {
+  list-style-type: none;
+  &__item {
+    float: left;
+    padding-right: 15px;
+    display: block;
+    height: auto;
+  }
+}
+
+.ba-menu__link {
+  /* Style for "Hello Port" */
+  text-decoration: none;
+  width: 81px;
+  height: 18px;
+  color: #ffffff;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 60px;
+  text-transform: uppercase;
+
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  border-radius: 20px;
+  &:hover {
+    /* Style for "Rounded Re" */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .ba-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .ba-menu__item {
+    margin: 15px;
+  }
+
+
+}
+
+//-----banner
+.ba-header__banner {
+  margin: 0 auto;
+  padding: 230px 0 270px;
+  text-align: center;
+  &--title {
+    /* Style for "We Are Cod" */
+    margin: 0px auto 30px;
+    color: #fefefb;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  &--text {
+    /* Style for "At vero eo" */
+    max-width: 604px;
+
+    width: 656px;
+    color: #fefdfd;
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0 auto;
+    letter-spacing: 2px;
+  }
+}
+
+//---------
+
+//----------about us section
+.about-us {
+  /* Style for "About-Bg" */
+  min-height: 800px;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  padding-top: 124px;
+  margin: 0 auto;
+  &__img {
+    background: url("../img/DeathtoStock_Wired8.png") 50% center;
+    background-size: cover;
+    /* Style for "DeathtoSto" */
+    width: 380px;
+    height: 555px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  &__description {
+    /* Style for "Shape 2" */
+    width: 790px;
+    height: 557px;
+    background-color: #ebebeb;
+    padding: 78px 34px 0 123px;
+    &--text {
+      /* Style for "Descriptio" */
+      width: 633px;
+      height: 236px;
+      color: #665f60;
+      font-family: "PT Sans", sans-serif;
+      font-size: 20px;
+    }
+    &--button {
+      /* Style for "btn-shape" */
+      width: 195px;
+      height: 50px;
+      border: 1px solid #7d7a7c;
+      /* Style for "Learn More" */
+      color: #7d7a7c;
+      font-family: "PT Sans", sans-serif;
+      font-size: 20px;
+      font-style: italic;
+      background-color: transparent;
+      text-align: center;
+      display: block;
+      margin: 80px auto 0;
+    }
+  }
+}
+
+.abouts-us__img--icon {
+  margin: 50px 0;
+}
+
+.abouts-us__img--text {
+  /* Style for "About Us" */
+  color: #fefbfc;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+//----------------
+
+//----------------isotope blocks
+.about-us-cont {
+  min-height: 800px;
+  background-color: #ebebeb;
+}
+
+.about-us__blocks {
+  /* Style for "Desc-tile-" */
+  max-width: 1230px;
+  margin: 0 auto;
+  &--square {
+    /* Style for "Rectangle" */
+    width: 410px;
+    height: 400px;
+    background-color: #dbdbdb;
+    float: left;
+    text-align: center;
+  }
+  &--rectangle {
+    /* Style for "unsplash_5" */
+    width: 410px;
+    height: 799px;
+    background: url("../img/unsplash_523ae1f5502d6_1.png") 50% center;
+    background-size: cover;
+    float: left;
+    text-align: center;
+  }
+}
+
+.about-us__blocks > div:nth-child(even) {
+  background-color: #ebebeb
+}
+
+.square__icon {
+  margin: 100px 166px 30px;
+}
+
+.square__title {
+  /* Style for "Text-Title" */
+  color: #665f60;
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.square__text {
+  /* Style for "Text-desc" */
+  color: #665f60;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.rectangle__icon {
+  margin: 100px 166px 30px;
+}
+
+.rectangle__title {
+  /* Style for "OUR SERVIC" */
+  color: #fefcfd;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.rectangle__text {
+  /* Style for "Blockquote" */
+  color: #fefcfd;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  /* Text style for "Blockquote" */
+  font-style: italic;
+  /* Text style for "" */
+  font-weight: 700;
+  margin: 150px auto;
+}
+
+//----------------
+
+//-------------recent works
+.recent-works {
+  /* Style for "works-bg" */
+  height: 1000px;
+  background: #9f9acf url("../img/DeathtoStock_Wired3.png") 50% no-repeat;
+  opacity: 0.7;
+  background-size: cover;
+  text-align: center;
+}
+
+.recent-works__icon {
+  margin: 50px auto 10px;
+}
+
+.recent-works__title {
+  /* Style for "RECENT WOR" */
+  color: #fefcfd;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+}
+.element{
+  width: 100%;
+}
+
+.carousel-cell img {
+  /* Style for "Campofrío_" */
+  width: 730px;
+  height: 546px;
+}
+
+.recent-works__button {
+  /* Style for "btn-shape" */
+  width: 195px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  /* Style for "Btn-Text" */
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  display: block;
+  margin: 100px auto 0;
+}
+
+//----------------
+
+//----------------team
+
+.team {
+  /* Style for "Our Team-B" */
+
+  min-height: 850px;
+  background-color: #ebebeb;
+  text-align: center;
+  &__icon {
+    /* Style for "Icon-Team" */
+    margin-top: 60px;
+    width: 60px;
+    height: 60px;
+  }
+  &__title {
+    /* Style for "MEET OUR T" */
+    color: #665f60;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.team__slider {
+  max-width: 1110px;
+  height: 485px;
+  margin: 100px auto 0;
+  &-item {
+    width: 350px;
+    display: inline-block;
+    height: 355px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 12px;
+    margin-left: 12px;
+    top: 110px;
+    &:hover {
+      cursor: pointer;
+    }
+    &-photo {
+      background-color: #ebebeb;
+      position: relative;
+      margin: 0 auto;
+      top: -125px;
+      height: 260px;
+      border-radius: 50%;
+      padding-top: 11px;
+      border: 10px solid transparent;
+    }
+    h4 {
+      width: 200px;
+      text-align: center;
+      margin: -95px auto 17px auto;
+      text-transform: uppercase;
+    }
+    p {
+      width: 200px;
+      text-align: center;
+      margin: 0 auto;
+      font-style: italic;
+    }
+    &-contact {
+      width: 100%;
+      height: 70px;
+      background-color: #9f9acf;
+      bottom: 0;
+      position: absolute;
+      text-align: center;
+      padding-top: 20px;
+      a {
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+          transform: scale(1.07);
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+}
+
+.flickity-viewport {
+  height: 555px !important;
+}
+
+//----------------get in touch
+.get-in-touch {
+  margin: 0 auto;
+  height: 900px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #9f9acf;
+  text-align: center;
+  &__icon {
+    width: 42px;
+    margin-top: 60px;
+  }
+  &__title{
+    /* Style for "GET IN TOU" */
+    color: #ffffff;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+#map {
+  margin: 0 auto;
+  height: 900px;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+//----------------
+.contact__form {
+  max-width: 860px;
+  height: 410px;
+  position: absolute;
+  z-index: 2;
+  top: 370px;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    input {
+      font-family: "Proxima Nova",sans-serif;
+      font-style: italic;
+      opacity: 0.6;
+      width: 48%;
+      height: 45px;
+      border: none;
+      padding-left: 25px;
+      border-radius: 4px;
+      outline: none;
+      &:focus {
+        opacity: 1;
+        transition: all 0.2s;
+      }
+    }
+  }
+  textarea {
+    margin-top: 25px;
+    font-family: "Proxima Nova",sans-serif;
+    font-style: italic;
+    opacity: 0.6;
+    width: 100%;
+    height: 200px;
+    padding-top: 15px;
+    border: none;
+    padding-left: 25px;
+    border-radius: 4px;
+    outline: none;
+    &:focus {
+      opacity: 1;
+      transition: all 0.2s;
+    }
+  }
+  &-btn {
+    display: block;
+    width: 300px;
+    height: 75px;
+    background-color: #9f9acf;
+    border-bottom: 4px solid #8783b0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 4px solid transparent;
+    margin: 50px auto 0 auto;
+    border-radius: 4px;
+    font-family: "Proxima Nova",sans-serif;
+    /* Style for "SEND MESSA" */
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    &:hover {
+      transform: scale(1.03);
+      border: 4px solid #8783b0;
+      transition: all 0.3s;
+    }
+  }
+}
+.contact__address {
+  position: absolute;
+  right: 0;
+  top: 210px;
+  z-index: 2;
+  width: 350px;
+  height: 95px;
+  background-color: #fff;
+  transform: translateX(260px);
+  transition: transform 0.1s ease-in;
+  &-icon {
+    width: 90px;
+    display: inline-block;
+    height: 100%;
+    background-color: #9f9acf;
+    vertical-align: top;
+    padding-top: 25px;
+  }
+  &-info{
+    width: 255px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    padding-top: 12px;
+    p {
+      font-family: "Proxima Nova",sans-serif;
+    }
+  }
+  &:hover {
+    transform: translateX(0);
+    transition: transform 0.7s;
+  }
+  @media all and (max-width: 550px) {
+    right: 0;
+    width: 100%;
+    transform: none;
+  }
+}
+.contact__tel {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  width: 350px;
+  height: 95px;
+  background-color: #fff;
+  transform: translateX(260px);
+  transition: transform 0.1s ease-in;
+  top: 305px;
+  &-icon{
+    padding-top: 30px;
+    width: 90px;
+    display: inline-block;
+    height: 100%;
+    background-color: #9f9acf;
+    vertical-align: top;
+  }
+  &-info {
+    width: 255px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    padding-top: 35px;
+  }
+  p {
+    font-family: "Proxima Nova",sans-serif;
+  }
+  &:hover {
+    transform: translateX(0);
+    transition: transform 0.7s;
+  }
+  @media all and (max-width: 550px) {
+    right: 0;
+    width: 100%;
+    transform: none;
+  }
+}
+.contact__button-top {
+  position: absolute;
+  right: 10%;
+  bottom: 65px;
+  z-index: 2;
+  width: 85px;
+  height: 85px;
+  background-color: rgba(159,154,207,0.5);
+  padding-top: 30px;
+  &:hover {
+    bottom: 75px;
+    transition: all 0.7s;
+  }
+  img{
+    /* Style for "interface" */
+    width: 36px;
+    height: 21px;
+    color: rgb(230, 230, 230);
+  }
+  @media all and (max-width: 750px) {
+    right: 0;
+  }
+  @media all and (max-width: 550px) {
+    display: none;
+  }
+
+}
+//----------------
+
+//-----------map
+
+
+
+//----------------
+//-------------footer
+.footer {
+  text-align: center;
+  position: relative;
+  padding: 70px 30px 40px;
+  /* Style for "Footer-bg" */
+  min-height: 185px;
+  background-color: rgb(159, 154, 207);
+  div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1110px;
+    p{
+      /* Style for "text" */
+      color: rgb(255, 255, 255);
+      font-family: "PT Sans", sans-serif;
+      font-size: 18px;
+    }
+  }
+
+}
+
+//----------------
